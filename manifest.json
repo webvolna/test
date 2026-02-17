@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Telegraph Page Summarizer",
+  "description": "Создаёт краткий summary текущей страницы и публикует его в telegra.ph.",
+  "version": "1.0.0",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://api.telegra.ph/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Отправить summary в telegra.ph",
+    "default_popup": "popup.html"
+  }
+}
